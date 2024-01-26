@@ -3,7 +3,25 @@
 @tailwind utilities;
 
 @layer base{
-    :root {
+    :root{
+        --primary: #3fbbc0;
+    }
+    @font-face {
+        font-family: "vazir";
+        src: url(../public/fonts/Vazir.ttf), format("truetype");
+    }
+    @font-face {
+        font-family: "vazirBold";
+        src: url(../public/fonts/Vazir-Bold.ttf), format("truetype");
+    }
+}
 
+@layer utilities{
+    .header__img{
+        background: url(/static/img/header-image.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @apply h-[600px]
     }
 }
